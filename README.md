@@ -39,10 +39,10 @@ Here are some screenshots of the project:
    ![Laptop View Screenshot](./Laptop.jpeg)
 
 2. **Tablet View**
-   ![Tablet View Screenshot](https://example.com/screenshot2.png)
+   ![Tablet View Screenshot](./Tablet.jpeg)
 
 3. **Mobile View**
-   ![Mobile View Screenshot](https://example.com/screenshot3.png)
+   ![Mobile View Screenshot](./Mobile.jpeg)
 
 ### Instructions to Run the Project
 1. Download the zipped folder and extract it.
