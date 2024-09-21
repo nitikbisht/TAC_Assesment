@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .header__logo img {
+    height: 50px;
+  }
+  
+  .header__nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+    align-items: center;
+  }
+  
+  .header__nav-item {
+    margin-right: 20px;
+  }
+  
+  .header__nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header__shop-now-btn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+ /* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('placeholder-banner.jpg'); /* Add your banner image here */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+  }
+  
+  .hero__text {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero__text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero__shop-now-btn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  
+  /* Product Grid Styles */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .product {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .product__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .add-to-cart-btn {
+    padding: 10px 15px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer__social-media a {
+    margin-right: 10px;
+  }
+  
+  .footer__newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .footer__newsletter button {
+    padding: 10px 15px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .header {
+      flex-direction: column;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  @media (max-width: 600px) {
+    .hero__text h1 {
+      font-size: 2rem;
+    }
+  
+    .hero__shop-now-btn {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+  
